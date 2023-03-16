@@ -1,0 +1,13 @@
+name: shovelapp
+title:
+username:
+account: physical-resources
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8215402
+bundleId: 6953428
+url: https://physical-resources.shinyapps.io/shovelapp/
+when: 1678736561.24815
+lastSyncTime: 1678736561.24817
+asMultiple: FALSE
+asStatic: FALSE

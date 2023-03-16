@@ -1,0 +1,37 @@
+Package: shovelApp
+Title: Snow Shovel Routes Checklist
+Version: 0.1.0
+Authors@R: 
+    person("Adam", "Sadowski", , "asadowsk@uoguelph.ca", role = c("cre", "aut"))
+Description: A summary of whether shovel routes were completed.  The data
+    comes from Qualtrics route checklists that the snow shovelers fill out
+    after they complete their routes each day, even if no action is
+    required. Maria Dimacuha (mdimac01@uoguelph.ca) used to manually check
+    the data and sends this information out at noon everyday from December
+    to March.  It’s simply a ‘pass/fail’ compliance report.
+License: MIT + file LICENSE
+URL: https://github.com/asadow/shovelApp
+BugReports: https://github.com/asadow/shovelApp/issues
+Imports: 
+    bslib,
+    config (>= 0.3.1),
+    glue,
+    golem (>= 0.3.5),
+    googlesheets4,
+    htmltools,
+    purrr,
+    reactable,
+    shiny (>= 1.7.4),
+    shinycssloaders,
+    tibble,
+    utils
+Suggests: 
+    knitr,
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
