@@ -23,8 +23,7 @@ knitr::opts_chunk$set(
 
 shovelApp is a Shiny application/R package for deploying a checklist table of whether University of Guelph shovel routes have been completed. The only user activity is a Regenerate button to update the table given that the sourced Googlesheet undergoes updates (mainly between 11:30 AM to 11:50 AM each day).
 
-![shovelApp](./Screenshot 2023-03-16 122253.png)
-
+![shovelApp](./screenshot.png)
 
 ## Installation
 
