@@ -19,7 +19,7 @@ The only user activity is a Regenerate button to update the table given
 that the sourced Googlesheet undergoes updates (mainly between 11:30 AM
 to 11:50 AM each day).
 
-![shovelApp](./Screenshot%202023-03-16%20122253.png)
+![shovelApp](./screenshot.png)
 
 ## Installation
 
