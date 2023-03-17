@@ -25,7 +25,6 @@ shovelApp is a Shiny application/R package for deploying a checklist table of wh
 
 ![shovelApp](./screenshot.png)
 
-
 ## Installation
 
 You can install the development version of shovelApp like so:
