@@ -20,7 +20,7 @@ mod_regen_data_ui <- function(id){
 #'
 #' @noRd
 mod_regen_data_server <- function(id, .df, .list_defs){
-  moduleServer( id, function(input, output, session){
+  moduleServer(id, function(input, output, session){
     stopifnot(is.reactive(.df))
     stopifnot(is.reactive(.list_defs))
 
@@ -37,11 +37,7 @@ mod_regen_data_server <- function(id, .df, .list_defs){
         .sleepy_df(),
         columns = .list_defs(),
         sortable = FALSE,
-        defaultColDef = reactable::colDef(
-          align = "center",
-          headerVAlign = "bottom",
-          html = TRUE
-        )
+        defaultColDef = reactable::colDef(html = TRUE)
       )
     })
   })
