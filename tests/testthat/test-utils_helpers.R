@@ -1,16 +1,3 @@
-# test_that("utils_named_map() does a named map()", {
-#   some_names <- c("col1", "col2")
-#   names(some_names) <- some_names
-#   mapped_names <- map(some_names, 1)
-#
-#   expect_equal(utils_named_map(some_names, 1), mapped_names)
-#   expect_named(utils_named_map(some_names, 1))
-#   expect_type(utils_named_map(1, "blah"), "list")
-#
-#   expect_null(utils_named_map(1, "blah")[[1]])
-#   expect_error(utils_named_map(1))
-# })
-
 test_that("utils_grey_if_na() returns a named list for missing values", {
   x <- 5
   y <- NA
@@ -30,4 +17,3 @@ test_that("utils_list_defs() returns a named list of column definitions", {
 
   expect_error(utils_list_defs(i), "is.data.frame")
 })
-
