@@ -2,10 +2,10 @@
 % Please edit documentation in R/utils_helpers.R
 \name{utils_authorize_GS}
 \alias{utils_authorize_GS}
-\title{Authorize googlsheets4 package through the .secrets folder.}
+\title{Authorize googlsheets4 package through the .secrets folder}
 \usage{
 utils_authorize_GS()
 }
 \description{
-Authorize googlsheets4 package through the .secrets folder.
+Authorize googlsheets4 package through the .secrets folder
 }

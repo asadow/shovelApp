@@ -19,10 +19,10 @@ mod_regen_data_ui <- function(id){
 #' regen_data Server Functions
 #'
 #' @noRd
-mod_regen_data_server <- function(id, .df, .col_defs){
+mod_regen_data_server <- function(id, .df, .list_defs){
   moduleServer( id, function(input, output, session){
     stopifnot(is.reactive(.df))
-    stopifnot(is.reactive(.col_defs))
+    stopifnot(is.reactive(.list_defs))
 
     ns <- session$ns
 
@@ -35,8 +35,13 @@ mod_regen_data_server <- function(id, .df, .col_defs){
     output$table <- reactable::renderReactable({
       reactable::reactable(
         .sleepy_df(),
-        columns = .col_defs(),
-        sortable = FALSE
+        columns = .list_defs(),
+        sortable = FALSE,
+        defaultColDef = reactable::colDef(
+          align = "center",
+          headerVAlign = "bottom",
+          html = TRUE
+        )
       )
     })
   })

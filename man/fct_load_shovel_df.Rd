@@ -2,10 +2,10 @@
 % Please edit documentation in R/fct_helpers.R
 \name{fct_load_shovel_df}
 \alias{fct_load_shovel_df}
-\title{Load shovel checklist data from googlesheet and set row names.}
+\title{Load shovel checklist data from googlesheet and set row names}
 \usage{
 fct_load_shovel_df()
 }
 \description{
-Load shovel checklist data from googlesheet and set row names.
+Load shovel checklist data from googlesheet and set row names
 }

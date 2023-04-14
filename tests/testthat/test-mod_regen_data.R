@@ -9,7 +9,7 @@ test_that("output updates when reactive input changes", {
     , {
       df <- tibble::tibble(x = 1, y = 2)
       .df(df)
-      .col_defs(utils_html_col_defs(df, 1))
+      .col_defs(utils_col_defs(df, 1))
       # changing reactiveVals does not automatically update the reactive graph,
       # so we have to do so manually by calling session$flushReact().
       session$flushReact()

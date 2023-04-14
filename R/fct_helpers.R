@@ -1,4 +1,4 @@
-#' Load shovel checklist data from googlesheet and set row names.
+#' Load shovel checklist data from googlesheet and set row names
 #'
 #'
 #' @export

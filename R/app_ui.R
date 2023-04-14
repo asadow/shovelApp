@@ -34,19 +34,21 @@ app_ui <- function(request) {
   )
 
   img_light <- img(src = "www/light-bulb.svg", height = 20)
-
   tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(),
     page_fluid(
       theme = theme,
-      img(
-        src = "www/pr-logo.jpg",
-        width = 300
-      ),
+      img(src = "www/pr-logo.jpg", width = 300),
       h1(
         class = "lead text-center bg-black text-white bg-gradient my-0 p-3",
-        tags$b("Snow Shovel Routes"),
+        tags$b(
+          icon("snowflake"),
+          icon("snowman"),
+          "Shovel Routes",
+          icon("snowman"),
+          icon("snowflake"),
+          )
       ),
       nav(
         title = NULL,

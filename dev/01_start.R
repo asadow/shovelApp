@@ -31,7 +31,7 @@ golem::fill_desc(
   author_first_name = "Adam", # Your First Name
   author_last_name = "Sadowski", # Your Last Name
   author_email = "asadowsk@uoguelph.ca", # Your Email
-  repo_url = NULL # The URL of the GitHub Repo (optional)
+  repo_url = "https://github.com/asadow/shovelApp" # The URL of the GitHub Repo (optional)
 )
 
 ## Set {golem} options ----
