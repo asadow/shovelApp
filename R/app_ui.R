@@ -44,10 +44,8 @@ app_ui <- function(request) {
         class = "lead text-center bg-black text-white bg-gradient my-0 p-3",
         tags$b(
           icon("snowflake"),
-          icon("snowman"),
-          "Shovel Routes",
-          icon("snowman"),
-          icon("snowflake"),
+          "Snow Shovel Routes",
+          icon("snowflake")
           )
       ),
       nav(

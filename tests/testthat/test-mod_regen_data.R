@@ -1,15 +1,14 @@
 test_that("output updates when reactive input changes", {
   .df <- reactiveVal()
-  .col_defs <- reactiveVal()
+  .list_defs <- reactiveVal()
 
   testServer(
     mod_regen_data_server,
     # Add here your module params
-    args = list(.df = .df, .col_defs = .col_defs)
+    args = list(.df = .df, .list_defs = .list_defs)
     , {
       df <- tibble::tibble(x = 1, y = 2)
       .df(df)
-      .col_defs(utils_col_defs(df, 1))
       # changing reactiveVals does not automatically update the reactive graph,
       # so we have to do so manually by calling session$flushReact().
       session$flushReact()
